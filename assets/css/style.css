@@ -24,6 +24,7 @@ main {
     padding: 50px;
     background-color: rgb(206, 238, 227);
     min-height: 50vh;
+    color: black;
 }
 
 footer {
@@ -31,6 +32,7 @@ footer {
     background-color: rgb(206, 238, 227);
     padding: 20px;
     border-top: 5px solid white;
+    color: black;
 }
 
 h1 {
@@ -49,10 +51,12 @@ select {
 
 legend {
     font-weight: bold;
+    color: black;
 }
 
 fieldset {
     margin: 20px 0;
+    color: black;
 }
 
 input[type='submit'] {

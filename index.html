@@ -14,17 +14,21 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="get" action="results.html"> 
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <label for="lastname">Your Last Name</label> <!-- TODO: Create a "lastname" input with type "text" -->
-                <input type="text" id="lastname" name="lastname"> <!-- TODO: Make fieldset and legend -->
+                <label for="firstname">Your First Name</label><span class="required-field">*</span>
+                <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="35">
+                <label for="lastname">Your Last Name</label><span class="required-field">*</span>
+                <input type="text" id="lastname" name="lastname" required minlength="2" maxlength="35"> <!-- TODO: Make fieldset and legend -->
+                <h5>Must be 21 years or older to enter</h5>
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
             </div>
             <!-- TODO: Make fieldset and legend -->
             <fieldset>
                     <legend>Your Contact Info</legend>
                     
-                    <label for="email">Your Email</label><!-- Todo: Email Input -->
-                    <input type="email" id="email" name="email">
+                    <label for="email">Your Email</label><span class="required-field">*</span>
+                    <!-- Todo: Email Input -->
+                    <input type="email" id="email" name="email" required>
                     
                     <label for="address">Your Street Address</label><!-- Todo: Street Address Input -->
                     <input type="text" id="address" name="address">
@@ -87,7 +91,7 @@
                     </select>
                     
                     <label for="zipcode">Your Zipcode</label>
-                    <input type="text" id="zipcode" name="zipcode">
+                    <input type="number" id="zipcode" name="zipcode" maxlength="5" minlength="5" pattern="[0-9]">
             </fieldset>
 
             <fieldset>
